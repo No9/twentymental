@@ -1,0 +1,10 @@
+{
+  "description": "A feed parser with a difference!",
+  "repository": {
+    "title": "Feed Analyser to tell you what is trending in your world",
+    "uses": {
+      "types": [ "links" ],
+      "services": [ "facebook", "twitter", "foursquare", "instagram" ]
+    }
+  }
+}
