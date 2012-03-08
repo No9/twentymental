@@ -1,7 +1,9 @@
 {
+  "name" : "twentymental",
+  "version" : "0.0.1",
   "description": "A feed parser with a difference!",
   "repository": {
-    "title": "Feed Analyser to tell you what is trending in your world",
+    "title": "Twenty Mental",
     "uses": {
       "types": [ "links" ],
       "services": [ "facebook", "twitter", "foursquare", "instagram" ]
