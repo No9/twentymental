@@ -16,12 +16,13 @@
     $(function() {
       var client = new APIClient();
       // get some photos
-      client.getJSON('/Me/photos', {limit: 10}, function(photos) {
-        console.log('found ' + photos.length + ' photos');
+      client.getJSON('/Me/Links', {limit: 10}, function(links) {
+        console.log('found ' + links.length + ' links');
         // add them to the DOM
-        for(var i in photos) {
-          console.log('photo #' + i, photos[i]);
-          $('body').append('<img src="' + photos[i].url + '">');
+        for(var i in links) {
+          console.log('photo #' + i, links[i]);
+          $('body').append('<h3>' + links[i].title + '</h3>');
+          $('body').append('<div>' + links[i].text + '</div>');
         }
       });
     });
